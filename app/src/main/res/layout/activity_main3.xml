@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity3"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/cuadro"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="TABLA AMORTIZACION INGLES"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/VariableP"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:fontFamily="@font/aldrich"
+                android:ems="10"
+                android:hint="Prestamo(p):"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/VariableN"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:fontFamily="@font/aldrich"
+                android:ems="10"
+                android:hint="Tiempo(n):"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/VariableTEM"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/aldrich"
+                    android:ems="10"
+                    android:hint="TEM:"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:inputType="numberDecimal" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="20dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/porcentaje" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnResolver"
+            android:layout_width="70mm"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4F000000"
+            android:fontFamily="@font/artifika"
+            android:onClick="Resolver3"
+            android:text="Resolver"
+            android:textColor="@color/white"
+            android:textSize="55dp"
+            app:cornerRadius="50dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:background="#4F000000">
+
+        <TableLayout
+            android:id="@+id/TablaArmotizacionIngles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#4F000000"/>
+    </ScrollView>
+
+</LinearLayout>
